@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Nerko One
+- Font Author: Copyright 2013 The Nerko One Project Authors (https://github.com/nermink99/Nerko/)
+- Font Source: http://fonts.gstatic.com/s/nerkoone/v2/m8JQjfZSc7OXlB3ZMOjzcJ5BZmqa3A.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

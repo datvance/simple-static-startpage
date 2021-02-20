@@ -2,6 +2,11 @@
 A stupidly simple, static, startpage for selfhosted services.
 
 ## Usage
+
+### Short version
+Just put the /srv directory on a webserver somewhere.
+
+### Less short version
 Edit config.json with your services:
 `vim config.json` 
 
