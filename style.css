@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: #001628;
+  color: lightgray;
+  padding: 0;
+  line-height: 1.15;
+}
+
+.page {
+  padding: 1em;
+}
+
+.site-title {
+  margin-bottom: .5em;
+}
+
+.items-container {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+}
+
+.item {
+  background-color: darkslategray;
+}
+
+.item h3 {
+  background-color: lightgray;
+  color: #001628; 
+  padding: .4em 1em;
+}
+
+.item h3 img {
+  margin-right: 1em;
+}
+
+.item h3 img, .item h3 span {
+  vertical-align: middle;
+}
+
+.item a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+.item:hover {
+  font-size: 102%;
+  opacity: .5;
+}
+
+.item div {
+  padding: 1em;
+}
+
+.item .item-tags {
+  margin-top: 1em;
+  padding: 0;
+  text-align: right;
+}
+
+.item .item-tags .item-tag {
+  background-color: lightgray;
+  color: #001628;
+  font-size: 12px;
+  margin-left: .5em;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .site-title {
+      font-size: 32px;
+  }
+
+  .page {
+      padding: 1em 2em;
+  }
+}

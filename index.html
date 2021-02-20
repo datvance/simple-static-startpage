@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simple. static. startpage.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/.png">
+</head>
+<body>
+
+<div class="page">
+  <h1 class="site-title">startpage.</h1>
+  <div class="items-container" id="items">
+  </div>
+</div>
+
+<script>
+  function items2html(items)
+  {
+    let template = '<article class="item"><a href="#url"><h3><img src="#icon" height="40px"><span class="item-title">#title</span></h3><div>#description #tags</div></a></article>';
+    let elements = [];
+    for (let index = 0; index < items.length; index++) {
+      const item = items[index];
+      let tags_html = '';
+      if(item.hasOwnProperty('tags'))
+      {
+        let tag_html = '';
+        for (let index = 0; index < item.tags.length; index++) {
+          tag_html += '<span class="item-tag">' + item.tags[index] + '</span>';
+        }
+        tags_html = '<div class="item-tags">' + tag_html + '</div>';
+      }
+
+      elements.push(
+        template
+        .replace('#icon', item.icon)        
+        .replace('#url', item.url)
+        .replace('#title', item.title)
+        .replace('#description', item.description)
+        .replace('#icon', item.icon)
+        .replace('#tags', tags_html)
+      );
+    }
+    return elements.join('');
+  }
+
+fetch('/config.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Could not load config');
+    }
+    return response.json();
+  })
+  .then(config => {
+    document.getElementById('items').innerHTML = items2html(config.items);
+  })
+  .catch(error => {
+    console.error('Fetch Error:', error);
+  });
+</script>
+</body>
+</html>

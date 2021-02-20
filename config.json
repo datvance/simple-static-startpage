@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "title": "acre41.com",
+      "description": "University of Texas sports articles, aggregated.",
+      "icon": "/icons/acre41.ico",
+      "url": "https://acre41.com",
+      "tags": ["sports", "texas", "website"]
+    },    
+    {
+      "title": "Docker Registry",
+      "description": "Docker registry for custom images.",
+      "icon": "/icons/docker.png",
+      "url": "http://hub.docker.com/",
+      "tags": ["app", "another-tag", "saas"]
+    },
+    {
+      "title": "familyvance.com",
+      "description": "The family blog.",
+      "icon": "/icons/familyvance.png",
+      "url": "https://familyvance.com",
+      "tags": ["blog", "website"]
+    },
+    {
+      "title": "FreshRSS",
+      "description": "Reads the feeds.",
+      "icon": "/icons/freshrss.ico",
+      "url": "https://freshrss.org",
+      "tags": ["app", "rss", "selfhosted"]
+    },
+    {
+      "title": "josheli.com",
+      "description": "Me.",
+      "icon": "/icons/josheli.ico",
+      "url": "https://josheli.com",
+      "tags": ["blog", "website"]
+    },
+    {
+      "title": "Router",
+      "description": "Home network, administered.",
+      "icon": "/icons/router.png",
+      "url": "http://127.0.0.1/",
+      "tags": ["app", "local"]
+    },
+    {
+      "title": "tf-viewer",
+      "description": "Garmin activities, selfhosted.",
+      "icon": "/icons/tf-viewer.png",
+      "url": "https://github.com/danielalvsaaker/tf-viewer",
+      "tags": ["app", "health", "selfhosted"] 
+    },    
+    {
+      "title": "VSCode",
+      "description": "VSCode in a browser.",
+      "icon": "/icons/vscode.png",
+      "url": "https://github.com/cdr/code-server",
+      "tags": ["app", "code", "selfhosted"]
+    },    
+    {
+      "title": "Wallabag",
+      "description": "Save and classify articles. Read them later.",
+      "icon": "/icons/wallabag.ico",
+      "url": "https://wallabag.org",
+      "tags": ["app", "selfhosted"]
+    },
+    {
+      "title": "Webdav",
+      "description": "For Joplin.",
+      "icon": "/icons/webdav.jpg",
+      "url": "https://joplinapp.org/",
+      "tags": ["app", "joplin", "notes"]
+    }
+  ]
+}

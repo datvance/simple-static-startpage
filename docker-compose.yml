@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  sss:
+    container_name: simple-static-startpage
+    image: caddy:alpine
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - $PWD:/usr/share/caddy
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
